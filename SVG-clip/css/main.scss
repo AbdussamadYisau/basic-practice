@@ -1,0 +1,42 @@
+body {
+    background-color: #DCF5FF;
+    margin: 0;
+    height: 100vh;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    font-family: 'Nunito', sans-serif;
+}
+
+.container {
+    width: 30%;
+    background-color: #ffffff;
+    border-radius: 10px;
+
+    .inner {
+        background-color:rgb(7, 218, 165);
+        padding: 1em;
+        border-radius: 10px;
+        width: calc(100% - 2em); 
+        clip-path: inset(0% 0% 0% 100%);
+        transition: all 0.5s ease-in-out;
+        cursor: pointer; 
+    
+        h1 {
+            color: #ffffff;
+            margin: 0;
+        }
+    
+        p {
+            color: #ffffff;
+            font-size: 0.8rem;
+        }
+    }
+
+    &:hover .inner {
+        clip-path: inset(0% 0% 0% 0%);
+        background: #00B6FF; 
+    }
+    
+}
+
